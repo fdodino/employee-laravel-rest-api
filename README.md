@@ -46,6 +46,18 @@ The API will be available at [http://localhost:8000/api/employees](http://localh
 - `PUT /api/employees/{id}` — Update an employee
 - `DELETE /api/employees/{id}` — Delete an employee
 
+## API Documentation
+
+This project uses [Scribe](https://scribe.knuckles.wtf/) to automatically generate API documentation.
+
+- **View the docs:** [http://localhost:8000/docs](http://localhost:8000/docs)
+- **Regenerate docs after changing endpoints:**
+  ```sh
+  php artisan scribe:generate
+  ```
+
+The documentation includes all available endpoints, parameters, and example requests/responses.
+
 ## License
 
 This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
