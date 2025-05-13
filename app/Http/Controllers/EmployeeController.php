@@ -16,9 +16,11 @@ class EmployeeController extends Controller
         $this->service = new EmployeeService();
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        return response()->json($this->service->all());
+        $perPage = $request->query('per_page', 10);
+        $employees = \App\Models\Employee::paginate($perPage);
+        return response()->json($employees);
     }
 
     public function show($id)
