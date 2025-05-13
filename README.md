@@ -2,6 +2,8 @@
 
 A RESTful API built with Laravel and MongoDB, providing CRUD operations for Employee resources. This project uses the official `mongodb/laravel-mongodb` package for seamless Eloquent integration with MongoDB.
 
+![employees demo](./images/employees_open_api.png)
+
 ## Description
 
 This API allows you to manage employees (create, read, update, delete) with data stored in a MongoDB database. It is designed for easy local development and quick integration with modern front-end frameworks or API clients.
