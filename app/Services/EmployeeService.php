@@ -27,6 +27,10 @@ class EmployeeService
     // Proxy CRUD methods for convenience
     public function all(): array { return $this->repository->all(); }
     public function find(string $id): ?Employee { return $this->repository->find($id); }
+    public function paginate($perPage = 10)
+    {
+        return $this->repository->paginate($perPage);
+    }
 
     public function create(array $data): Employee
     {

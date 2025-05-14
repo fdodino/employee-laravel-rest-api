@@ -6,6 +6,10 @@ use App\Models\Employee;
 
 class EmployeeRepository
 {
+    public function paginate($perPage = 10)
+    {
+        return Employee::paginate($perPage);
+    }
     
 
     public function all(): array
