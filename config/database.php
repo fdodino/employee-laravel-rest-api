@@ -39,6 +39,7 @@ return [
             'password' => env('MONGO_DB_PASSWORD'),
             'options'  => [
                 'database' => env('MONGO_DB_AUTHENTICATION_DATABASE', 'admin'), // required with Mongo 3+
+            'transactions' => false,
             ],
         ],
 
